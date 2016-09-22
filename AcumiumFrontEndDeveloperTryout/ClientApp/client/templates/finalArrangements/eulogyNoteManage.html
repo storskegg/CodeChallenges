@@ -1,0 +1,17 @@
+---
+name: eulogyNoteManage
+controller: EulogyNoteCtrl
+url: /eulogyNoteManage
+---
+
+<div class="grid-container">
+
+    <h1>Eulogy Notes</h1>
+
+    <div ng-repeat="entity in entities">
+        <div ng-include="'templates/partials/eulogyNote/edit.html'"></div>
+    </div>
+
+    <div ng-include="'templates/partials/eulogyNote/add.html'"></div>
+
+</div>

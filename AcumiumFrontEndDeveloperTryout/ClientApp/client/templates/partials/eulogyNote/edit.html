@@ -1,0 +1,21 @@
+<fieldset>
+    <div ng-hide="entity.isEditing">
+        <form ng-submit="setEditMode(entity)" name="entityViewForm">
+            Who: {{entity.eulogyNoteWho}} <br/>
+            Notes : {{entity.eulogyNotes}} <br/>
+            <button type="submit">Edit Note</button>
+            <button type="button" ng-click="deleteEntity(entity)">Delete Note</button>
+        </form>
+    </div>
+
+    <div ng-show="entity.isEditing">
+        <form ng-submit="editEntity(entity)" name="entityEditForm">
+
+            Who: {{entity.eulogyNoteWho}} <br/>
+            Notes : {{entity.eulogyNotes}} <br/>
+
+            <button type="submit">Save Note</button>
+            <button type="button" ng-click="cancelEditMode(entityEditForm,entity)">Cancel</button>
+        </form>
+    </div>
+</fieldset>

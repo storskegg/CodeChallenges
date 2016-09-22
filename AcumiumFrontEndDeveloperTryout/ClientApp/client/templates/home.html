@@ -1,0 +1,21 @@
+---
+name: home
+controller: HomeCtrl
+url: /
+---
+<div class="grid-container align-center small-12 medium-6 large-6">
+    <div class="grid-content">
+        <form ng-submit="logIn()" class="border">
+            <h1>Sign in</h1>
+            <label>
+                <input type="email" placeholder="your email address" ng-model="email">
+            </label>
+            <label>
+                <input type="password" placeholder="your password" ng-model="password">
+            </label>
+            <input type="submit" value="Sign in" class="expand button"/>
+            <p><a href="#">Forgot your username?</a></p>
+            <p><a ui-sref="passwordReset">Forgot your password?</a></p>
+        </form>
+    </div>
+</div>

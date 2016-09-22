@@ -1,0 +1,17 @@
+---
+name: loanManage
+controller: LoanCtrl
+url: /loanManage
+---
+
+<div class="grid-container">
+
+    <h1>Loan Manager</h1>
+
+    <div ng-repeat="entity in entities">
+        <div ng-include="'templates/partials/loan/edit.html'"></div>
+    </div>
+
+    <div ng-include="'templates/partials/loan/add.html'"></div>
+
+</div>

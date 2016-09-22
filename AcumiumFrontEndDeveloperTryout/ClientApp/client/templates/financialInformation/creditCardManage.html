@@ -1,0 +1,17 @@
+---
+name: creditCardManage
+controller: CreditCardCtrl
+url: /creditCardManage
+---
+
+<div class="grid-container">
+
+    <h1>Credit Card Manager</h1>
+
+    <div ng-repeat="entity in entities">
+        <div ng-include="'templates/partials/creditCard/edit.html'"></div>
+    </div>
+
+    <div ng-include="'templates/partials/creditCard/add.html'"></div>
+
+</div>

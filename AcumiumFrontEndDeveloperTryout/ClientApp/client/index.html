@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" ng-app="mlw">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Life and Wishes</title>
+        <!-- FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic|Lato:400,700,400italic|Antic+Slab|Cabin:400,700,400italic|Average|News+Cycle:400,700|Coustard|Dekko|Istok+Web:400,700,400italic|Copse|Asap:400,700,400italic|Nunito:400,700|Enriqueta:400,700|Handlee|Delius|Kalam|Amiri:400,700|Vollkorn:400,700|Quando' rel='stylesheet' type='text/css'>
+        <link href="/assets/font/foundation-icons.css" rel="stylesheet" type="text/css">
+
+        <link href="/assets/css/app.css" rel="stylesheet" type="text/css">
+        <link href="/assets/css/site.css" rel="stylesheet" type="text/css">
+
+        <script src="/assets/js/foundation.js"></script>
+        <script src="/assets/js/templates.js"></script>
+        <script src="/assets/js/routes.js"></script>
+        <script src="/assets/js/app.js"></script>
+    </head>
+    <body>
+        <mobile-navigation></mobile-navigation>
+        <div class="app-content">
+            <header>
+                <div class="grid-container">
+                    <div class="grid-block">
+                        <div class="hide-for-medium small-2 align-left text-left">
+                            <div zf-toggle="menu" class="menu-icon">
+                                <i class="fi-list"></i>
+                            </div>
+                        </div>
+                        <div class="small-3 medium-3 large-3 align-left text-left">
+                            <a ui-sref="home">
+                                <div class="logo"></div>
+                            </a>
+                        </div>
+                        <div class="small-3 medium-7 large-7 align-right text-right">
+                            <ul>
+                                <li><a ui-sref="home">Sign in</a></li>
+                                <li class="show-for-medium"><a ui-sref="home">Pricing</a></li>
+                                <li class="show-for-medium"><a ui-sref="home">Product</a></li>
+                                <li class="show-for-medium"><a ui-sref="home">Support</a></li>
+                            </ul>
+                        </div>
+                        <div class="small-4 medium-2 large-2 align-right text-right">
+                            <a ui-sref="sign-up" class="button">Sign up for free</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="grid-container">
+                <div class="grid-frame align-center">
+                    <desktop-navigation></desktop-navigation>
+                    <div id="main" ui-view class="grid-content align-center"></div>
+                </div>
+            </div>
+            <footer>
+                <ul class="menu-bar secondary">
+                    <li><a href="#"><i class="fi-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="fi-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="fi-social-pinterest"></i></a></li>
+                </ul>
+                <div class="grid-container">
+                    <ul>
+                        <li>About Us</li>
+                        <li>Pricing</li>
+                        <li>Privacy and Security</li>
+                        <li>Support</li>
+                        <li>Contact Us</li>
+                    </ul>
+                    Copyright My Life & Wishes  |  Privacy Policy  | Terms and Conditions
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

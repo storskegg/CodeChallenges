@@ -1,0 +1,23 @@
+<fieldset>
+    <div ng-hide="entity.isEditing">
+        <form ng-submit="setEditMode(entity)" name="entityViewForm">
+            Number: {{entity.cardNumber}} <br/>
+            Type : {{entity.type}} <br/>
+            Email : {{entity.email}} <br/>
+            <button type="submit">Edit Card</button>
+            <button type="button" ng-click="deleteEntity(entity)">Delete Card</button>
+        </form>
+    </div>
+
+    <div ng-show="entity.isEditing">
+        <form ng-submit="editEntity(entity)" name="entityEditForm">
+
+            Number: <input type="text" ng-model="entity.cardNumber" required="true" /> <br/>
+            Type : <input type="text" ng-model="entity.type" required="true" />
+            Email : <input type="email" ng-model="entity.email" required="true" />
+
+            <button type="submit">Save Card</button>
+            <button type="button" ng-click="cancelEditMode(entityEditForm,entity)">Cancel</button>
+        </form>
+    </div>
+</fieldset>

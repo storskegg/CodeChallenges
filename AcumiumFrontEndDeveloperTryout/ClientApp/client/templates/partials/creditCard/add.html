@@ -1,0 +1,12 @@
+<h2>Add Card</h2>
+<fieldset>
+    <form name="addForm" ng-submit="addEntity(entity);entity = {}">
+
+        Number: <input type="text" ng-model="entity.cardNumber" required="true" /> <br/>
+        Type : <input type="text" ng-model="entity.type" required="true" />
+        Email : <input type="email" ng-model="entity.email" required="true" />
+
+
+        <input type="submit" ng-click="" value="Add a New  Card" />
+    </form>
+</fieldset>

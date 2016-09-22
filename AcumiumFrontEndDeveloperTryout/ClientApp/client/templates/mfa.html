@@ -1,0 +1,22 @@
+---
+name: mfa
+controller: HomeCtrl
+url: /login/mfa
+---
+
+<div class="grid-container align-center small-12 medium-6 large-6">
+    <div class="grid-content">
+        <form ng-submit="submitSecurityCode()" class="border">
+            <h1>Enter Security Code</h1>
+            <p>Please enter the two-factor authentication code we just sent to your phone.</p>
+            <label>
+                <input type="text" placeholder="security code" ng-model="securityCode" autofocus>
+            </label>
+            <input type="submit" value="Sign in" class="expand button"/>
+            <p>Check your authentication app for your code.</p>
+            <p><a href="#">I need help with this.</a></p>
+        </form>
+    </div>
+
+   <test-dir></test-dir>
+</div>
